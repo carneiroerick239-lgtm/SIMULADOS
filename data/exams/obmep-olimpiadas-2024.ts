@@ -1,0 +1,440 @@
+import { Exam } from '@/types/quiz';
+
+export const obmepOlimpiadas2024: Exam = {
+  id: 'obmep-olimpiadas-2024',
+  slug: 'obmep-olimpiada-matematica',
+  title: 'OBMEP & Olimpíadas Científicas - Fase 1',
+  subtitle: 'Olimpíada Brasileira de Matemática das Escolas Públicas • Nível 2 e 3 (Treinamento Especial)',
+  category: 'olimpiadas',
+  categoryLabel: 'Olimpíadas Acadêmicas',
+  year: 2024,
+  institution: 'IMPA / SBM / OBMEP',
+  difficulty: 'Difícil',
+  durationMinutes: 150,
+  questionsCount: 20,
+  disciplines: ['Aritmética & Teoria dos Números', 'Geometria Plana', 'Contagem & Probabilidade', 'Álgebra & Equações', 'Raciocínio Lógico Dedutivo'],
+  description: 'Simulado completo com 20 desafios originais inspirados no estilo da OBMEP e Canguru de Matemática. Desenvolvido para aguçar a criatividade, o raciocínio dedutivo e a elegância na resolução de problemas sem fórmulas mecânicas.',
+  isOfficial: false,
+  questions: [
+    {
+      id: 'obmep-q01',
+      number: 1,
+      subject: 'Aritmética & Teoria dos Números',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino, inspirada no estilo OBMEP - 1ª Fase',
+      isOfficial: false,
+      difficulty: 'Fácil',
+      prompt: 'Qual é o algarismo das unidades da potência 7²⁰²⁴?',
+      alternatives: [
+        { id: 'A', text: '1' },
+        { id: 'B', text: '3' },
+        { id: 'C', text: '7' },
+        { id: 'D', text: '9' },
+        { id: 'E', text: '5' }
+      ],
+      correctAlternativeId: 'A',
+      explanation: 'As potências de 7 terminam em uma sequência periódica de 4 algarismos: 7¹ termina em 7, 7² termina em 9, 7³ termina em 3, 7⁴ termina em 1, 7⁵ termina em 7, e assim sucessivamente (período 4). Como 2024 é múltiplo de 4 (2024 ÷ 4 = 506 com resto 0), a potência 7²⁰²⁴ termina no 4º elemento do ciclo, ou seja, 1.',
+      teacherName: 'Prof. Eduardo Wagner',
+      pedagogicalFocus: 'Padrões Numéricos e Aritmética Modular'
+    },
+    {
+      id: 'obmep-q02',
+      number: 2,
+      subject: 'Geometria Plana',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino, inspirada no estilo OBMEP',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'Um retângulo de lados 8 cm e 18 cm possui a mesma área que um quadrado. O perímetro desse quadrado é igual a:',
+      alternatives: [
+        { id: 'A', text: '36 cm' },
+        { id: 'B', text: '48 cm' },
+        { id: 'C', text: '52 cm' },
+        { id: 'D', text: '64 cm' },
+        { id: 'E', text: '72 cm' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'A área do retângulo é A = 8 × 18 = 144 cm². O quadrado possui área L² = 144 => L = √144 = 12 cm. O perímetro do quadrado é 4 × L = 4 × 12 = 48 cm.',
+      teacherName: 'Prof. Eduardo Wagner',
+      pedagogicalFocus: 'Áreas e Perímetros'
+    },
+    {
+      id: 'obmep-q03',
+      number: 3,
+      subject: 'Contagem & Probabilidade',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino, inspirada no estilo OBMEP',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'De quantas maneiras podemos escolher três vértices de um hexágono regular para formar um triângulo equilátero?',
+      alternatives: [
+        { id: 'A', text: '1' },
+        { id: 'B', text: '2' },
+        { id: 'C', text: '4' },
+        { id: 'D', text: '6' },
+        { id: 'E', text: '8' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'Numerando os vértices de 1 a 6 em ordem circular: os triângulos formados por vértices alternados (com salto de 1 vértice) possuem todos os lados iguais às diagonais que pulam 1 vértice. Há exatamente 2 conjuntos de vértices alternados: {1, 3, 5} e {2, 4, 6}. Qualquer outro trio de vértices não formará triângulo com 3 lados iguais. Portanto, há exatamente 2 triângulos equiláteros.',
+      teacherName: 'Prof. Eduardo Wagner',
+      pedagogicalFocus: 'Combinatória Geométrica'
+    },
+    {
+      id: 'obmep-q04',
+      number: 4,
+      subject: 'Álgebra & Equações',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino para olimpíadas acadêmicas',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'Se x + 1/x = 5, qual é o valor de x² + 1/x²?',
+      alternatives: [
+        { id: 'A', text: '21' },
+        { id: 'B', text: '23' },
+        { id: 'C', text: '25' },
+        { id: 'D', text: '27' },
+        { id: 'E', text: '29' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'Elevando ambos os lados ao quadrado: (x + 1/x)² = 5² => x² + 2·x·(1/x) + 1/x² = 25 => x² + 2 + 1/x² = 25 => x² + 1/x² = 25 - 2 = 23.',
+      teacherName: 'Prof. Eduardo Wagner',
+      pedagogicalFocus: 'Produtos Notáveis e Fatoração'
+    },
+    {
+      id: 'obmep-q05',
+      number: 5,
+      subject: 'Raciocínio Lógico Dedutivo',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino estilo Canguru de Matemática',
+      isOfficial: false,
+      difficulty: 'Fácil',
+      prompt: 'Em uma fila de 20 estudantes, Lucas percebe que há 7 pessoas à sua frente. Quantas pessoas estão atrás de Lucas nessa fila?',
+      alternatives: [
+        { id: 'A', text: '11' },
+        { id: 'B', text: '12' },
+        { id: 'C', text: '13' },
+        { id: 'D', text: '14' },
+        { id: 'E', text: '15' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'Se há 7 pessoas à frente de Lucas, ele ocupa a 8ª posição na fila. As pessoas atrás dele totalizam: 20 - 8 = 12 pessoas.',
+      teacherName: 'Profa. Ana Paula Miranda',
+      pedagogicalFocus: 'Posicionamento e Contagem Ordinal'
+    },
+    {
+      id: 'obmep-q06',
+      number: 6,
+      subject: 'Aritmética & Teoria dos Números',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino para olimpíadas acadêmicas',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'O número de divisores positivos do número 360 é igual a:',
+      alternatives: [
+        { id: 'A', text: '18' },
+        { id: 'B', text: '24' },
+        { id: 'C', text: '30' },
+        { id: 'D', text: '36' },
+        { id: 'E', text: '40' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'Fatorando 360 em números primos: 360 = 2³ × 3² × 5¹. A quantidade de divisores positivos é o produto dos expoentes acrescidos de 1: d(360) = (3 + 1) × (2 + 1) × (1 + 1) = 4 × 3 × 2 = 24.',
+      teacherName: 'Prof. Eduardo Wagner',
+      pedagogicalFocus: 'Fatoração Prima e Divisores'
+    },
+    {
+      id: 'obmep-q07',
+      number: 7,
+      subject: 'Geometria Plana',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino estilo OBMEP Nível 2',
+      isOfficial: false,
+      difficulty: 'Difícil',
+      prompt: 'Em um triângulo retângulo com catetos de medidas 6 cm e 8 cm, a hipotenusa mede 10 cm. O raio da circunferência inscrita (inraio) nesse triângulo mede:',
+      alternatives: [
+        { id: 'A', text: '1,5 cm' },
+        { id: 'B', text: '2,0 cm' },
+        { id: 'C', text: '2,5 cm' },
+        { id: 'D', text: '3,0 cm' },
+        { id: 'E', text: '3,5 cm' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'Para todo triângulo retângulo de catetos a e b e hipotenusa c, o raio r do círculo inscrito cumpre a relação r = (a + b - c) / 2. Aqui: r = (6 + 8 - 10) / 2 = (14 - 10) / 2 = 4 / 2 = 2,0 cm.',
+      teacherName: 'Prof. Eduardo Wagner',
+      pedagogicalFocus: 'Círculo Inscrito e Triângulo Retângulo'
+    },
+    {
+      id: 'obmep-q08',
+      number: 8,
+      subject: 'Contagem & Probabilidade',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino para olimpíadas acadêmicas',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'Dois dados convencionais honestos de seis faces numeradas de 1 a 6 são lançados simultaneamente. Qual é a probabilidade de que a soma dos pontos obtidos seja igual a 7?',
+      alternatives: [
+        { id: 'A', text: '1/12' },
+        { id: 'B', text: '1/6' },
+        { id: 'C', text: '5/36' },
+        { id: 'D', text: '7/36' },
+        { id: 'E', text: '1/4' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'O espaço amostral possui 6 × 6 = 36 pares ordenados possíveis. Os pares cuja soma é 7 são: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) — exatamente 6 casos favoráveis. Probabilidade = 6 / 36 = 1/6.',
+      teacherName: 'Profa. Ana Paula Miranda',
+      pedagogicalFocus: 'Probabilidade Clássica'
+    },
+    {
+      id: 'obmep-q09',
+      number: 9,
+      subject: 'Álgebra & Equações',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino para olimpíadas acadêmicas',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'Se as raízes da equação quadrática x² - 7x + 12 = 0 são r e s, qual é o valor da expressão (1/r + 1/s)?',
+      alternatives: [
+        { id: 'A', text: '5/12' },
+        { id: 'B', text: '7/12' },
+        { id: 'C', text: '12/7' },
+        { id: 'D', text: '1' },
+        { id: 'E', text: '7/6' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'Pelas relações de Girard: a soma das raízes é r + s = 7 e o produto é r · s = 12. Somando as frações: 1/r + 1/s = (s + r) / (r · s) = 7 / 12.',
+      teacherName: 'Prof. Eduardo Wagner',
+      pedagogicalFocus: 'Relações de Girard'
+    },
+    {
+      id: 'obmep-q10',
+      number: 10,
+      subject: 'Raciocínio Lógico Dedutivo',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino estilo OBMEP',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'Quatro amigas — Alice, Beatriz, Clara e Diana — apostaram uma corrida. Sabe-se que: Beatriz chegou logo à frente de Diana; Alice não foi a primeira nem a última; Clara chegou antes de Alice. Quem venceu a corrida?',
+      alternatives: [
+        { id: 'A', text: 'Alice' },
+        { id: 'B', text: 'Beatriz' },
+        { id: 'C', text: 'Clara' },
+        { id: 'D', text: 'Diana' },
+        { id: 'E', text: 'Houve empate duplo' }
+      ],
+      correctAlternativeId: 'C',
+      explanation: 'Alice não foi 1ª nem 4ª, logo Alice foi 2ª ou 3ª. Clara chegou antes de Alice. Como Beatriz chegou imediatamente à frente de Diana, o bloco (B, D) ocupa duas posições consecutivas. Se Clara foi a 1ª, Alice pode ser a 2ª ou 4ª; testando Clara em 1º, Alice em 2º, Beatriz em 3º e Diana em 4º: todas as pistas são perfeitamente atendidas. Logo, Clara foi a vencedora da corrida.',
+      teacherName: 'Profa. Ana Paula Miranda',
+      pedagogicalFocus: 'Lógica de Ordenação'
+    },
+    {
+      id: 'obmep-q11',
+      number: 11,
+      subject: 'Aritmética & Teoria dos Números',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino para olimpíadas acadêmicas',
+      isOfficial: false,
+      difficulty: 'Difícil',
+      prompt: 'O menor número inteiro positivo n tal que n! (fatorial de n) termina em exatamente dois zeros consecutivos à direita é:',
+      alternatives: [
+        { id: 'A', text: '5' },
+        { id: 'B', text: '10' },
+        { id: 'C', text: '15' },
+        { id: 'D', text: '20' },
+        { id: 'E', text: '25' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'Zeros finais no fatorial correspondem aos fatores 10 = 2 × 5. Como há mais fatores 2 do que 5, basta contar os múltiplos de 5: para n = 5 a 9, temos um único fator 5 (5! termina em um zero). Em n = 10, temos o fator 5 e o 10 = 2 × 5, totalizando dois fatores 5. Portanto, 10! = 3.628.800 termina em exatamente dois zeros.',
+      teacherName: 'Prof. Eduardo Wagner',
+      pedagogicalFocus: 'Fórmulas de Legendre e Fatoriais'
+    },
+    {
+      id: 'obmep-q12',
+      number: 12,
+      subject: 'Geometria Plana',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino estilo OBMEP',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'A soma das medidas dos ângulos internos de um polígono convexo regular é igual a 1080°. Quantos lados tem esse polígono?',
+      alternatives: [
+        { id: 'A', text: '6 (Hexágono)' },
+        { id: 'B', text: '7 (Heptágono)' },
+        { id: 'C', text: '8 (Octógono)' },
+        { id: 'D', text: '9 (Eneágono)' },
+        { id: 'E', text: '10 (Decágono)' }
+      ],
+      correctAlternativeId: 'C',
+      explanation: 'A fórmula da soma dos ângulos internos de um polígono convexo de n lados é S = (n - 2) × 180°. Igualando: (n - 2) × 180 = 1080 => n - 2 = 1080 / 180 = 6 => n = 8 lados (octógono).',
+      teacherName: 'Prof. Eduardo Wagner',
+      pedagogicalFocus: 'Polígonos Convexos e Ângulos'
+    },
+    {
+      id: 'obmep-q13',
+      number: 13,
+      subject: 'Contagem & Probabilidade',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino para olimpíadas acadêmicas',
+      isOfficial: false,
+      difficulty: 'Difícil',
+      prompt: 'De quantas maneiras podemos distribuir 6 moedas idênticas de R$ 1,00 entre 3 cofres distintos, podendo haver cofres que não recebam nenhuma moeda?',
+      alternatives: [
+        { id: 'A', text: '18' },
+        { id: 'B', text: '21' },
+        { id: 'C', text: '28' },
+        { id: 'D', text: '36' },
+        { id: 'E', text: '56' }
+      ],
+      correctAlternativeId: 'C',
+      explanation: 'Problema de combinação com repetição (método dos traços e bolas): queremos o número de soluções inteiras não negativas de x₁ + x₂ + x₃ = 6. Temos 6 objetos e 3 - 1 = 2 divisores. Total = C(6 + 2, 2) = C(8, 2) = (8 × 7) / 2 = 28 maneiras.',
+      teacherName: 'Profa. Ana Paula Miranda',
+      pedagogicalFocus: 'Combinação com Repetição'
+    },
+    {
+      id: 'obmep-q14',
+      number: 14,
+      subject: 'Álgebra & Sequências',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino para olimpíadas acadêmicas',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'Qual é a soma de todos os números ímpares positivos de 1 até 99?',
+      alternatives: [
+        { id: 'A', text: '2400' },
+        { id: 'B', text: '2450' },
+        { id: 'C', text: '2500' },
+        { id: 'D', text: '2550' },
+        { id: 'E', text: '2600' }
+      ],
+      correctAlternativeId: 'C',
+      explanation: 'Os números ímpares formam uma progressão aritmética: 1, 3, 5, ..., 99. O termo geral é 2n - 1 = 99 => 2n = 100 => n = 50 termos. Uma propriedade clássica da álgebra é que a soma dos primeiros n números ímpares é igual a n²: S = 50² = 2500.',
+      teacherName: 'Prof. Eduardo Wagner',
+      pedagogicalFocus: 'Somas Notáveis e PA'
+    },
+    {
+      id: 'obmep-q15',
+      number: 15,
+      subject: 'Geometria Plana',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino para olimpíadas acadêmicas',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'Em um círculo de raio R = 10 cm, uma corda AB dista 6 cm do centro do círculo. O comprimento da corda AB é igual a:',
+      alternatives: [
+        { id: 'A', text: '8 cm' },
+        { id: 'B', text: '12 cm' },
+        { id: 'C', text: '16 cm' },
+        { id: 'D', text: '18 cm' },
+        { id: 'E', text: '20 cm' }
+      ],
+      correctAlternativeId: 'C',
+      explanation: 'A reta perpendicular à corda traçada a partir do centro divide a corda em dois segmentos de medida x e forma um triângulo retângulo com o raio R e a distância d: x² + d² = R² => x² + 6² = 10² => x² + 36 = 100 => x² = 64 => x = 8 cm. Como a corda tem comprimento 2x: AB = 2 × 8 = 16 cm.',
+      teacherName: 'Prof. Eduardo Wagner',
+      pedagogicalFocus: 'Geometria do Círculo e Teorema de Pitágoras'
+    },
+    {
+      id: 'obmep-q16',
+      number: 16,
+      subject: 'Aritmética & Teoria dos Números',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino para olimpíadas acadêmicas',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'Três lâmpadas piscam em intervalos regulares: a primeira a cada 12 segundos, a segunda a cada 15 segundos e a terceira a cada 20 segundos. Se elas piscam juntas exatamente às 12h00min00s, qual será o próximo instante em que as três piscarão juntas novamente?',
+      alternatives: [
+        { id: 'A', text: '12h00min45s' },
+        { id: 'B', text: '12h01min00s' },
+        { id: 'C', text: '12h01min30s' },
+        { id: 'D', text: '12h02min00s' },
+        { id: 'E', text: '12h03min00s' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'O tempo para que coincidam novamente é o Mínimo Múltiplo Comum (MMC) entre 12, 15 e 20: 12 = 2² × 3; 15 = 3 × 5; 20 = 2² × 5. MMC(12, 15, 20) = 2² × 3 × 5 = 60 segundos. 60 segundos = 1 minuto. Logo, o próximo instante é 12h01min00s.',
+      teacherName: 'Profa. Ana Paula Miranda',
+      pedagogicalFocus: 'MMC e Periodicidade'
+    },
+    {
+      id: 'obmep-q17',
+      number: 17,
+      subject: 'Raciocínio Lógico Dedutivo',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino estilo OBMEP',
+      isOfficial: false,
+      difficulty: 'Fácil',
+      prompt: 'Um relógio digital marca 21:12. Trata-se de um horário palíndromo (lido da esquerda para a direita ou da direita para a esquerda é o mesmo). Quantos minutos se passarão até o próximo horário palíndromo?',
+      alternatives: [
+        { id: 'A', text: '60 minutos' },
+        { id: 'B', text: '70 minutos' },
+        { id: 'C', text: '110 minutos' },
+        { id: 'D', text: '130 minutos' },
+        { id: 'E', text: '240 minutos' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'Os horários palíndromos têm a forma AB:BA. Às 21:12, na hora 21 não há outro palíndromo pois o único minuto que invertido dá 21 é 12. Na hora 22, o palíndromo é 22:22. A diferença entre 21:12 e 22:22 é: de 21:12 a 22:12 são 60 minutos, e de 22:12 a 22:22 são mais 10 minutos => 60 + 10 = 70 minutos.',
+      teacherName: 'Prof. Eduardo Wagner',
+      pedagogicalFocus: 'Simetria e Leitura Temporal'
+    },
+    {
+      id: 'obmep-q18',
+      number: 18,
+      subject: 'Álgebra & Equações',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino para olimpíadas acadêmicas',
+      isOfficial: false,
+      difficulty: 'Difícil',
+      prompt: 'Seja f uma função que satisfaz f(x + y) = f(x) + f(y) + 2xy para todos os números reais x e y. Sabendo que f(1) = 3, o valor de f(4) é igual a:',
+      alternatives: [
+        { id: 'A', text: '18' },
+        { id: 'B', text: '20' },
+        { id: 'C', text: '24' },
+        { id: 'D', text: '28' },
+        { id: 'E', text: '32' }
+      ],
+      correctAlternativeId: 'C',
+      explanation: 'Calculando passo a passo: Para f(2) = f(1 + 1) = f(1) + f(1) + 2(1)(1) = 3 + 3 + 2 = 8. Para f(4) = f(2 + 2) = f(2) + f(2) + 2(2)(2) = 8 + 8 + 8 = 24.',
+      teacherName: 'Prof. Eduardo Wagner',
+      pedagogicalFocus: 'Equações Funcionais Básicas'
+    },
+    {
+      id: 'obmep-q19',
+      number: 19,
+      subject: 'Geometria Plana',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino estilo OBMEP',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'Em um trapézio isósceles, as bases medem 10 cm e 22 cm, e os lados oblíquos medem 10 cm cada um. A altura desse trapézio mede:',
+      alternatives: [
+        { id: 'A', text: '6 cm' },
+        { id: 'B', text: '7 cm' },
+        { id: 'C', text: '8 cm' },
+        { id: 'D', text: '9 cm' },
+        { id: 'E', text: '10 cm' }
+      ],
+      correctAlternativeId: 'C',
+      explanation: 'Traçando as alturas a partir dos vértices da base menor, dividimos a base maior (22) em: a projeção da base menor (10) no centro e dois segmentos iguais nas extremidades: (22 - 10) / 2 = 12 / 2 = 6 cm cada. Cada triângulo retângulo formado tem cateto 6, hipotenusa 10 e outro cateto h (altura). Pelo Teorema de Pitágoras: h² + 6² = 10² => h² + 36 = 100 => h² = 64 => h = 8 cm.',
+      teacherName: 'Prof. Eduardo Wagner',
+      pedagogicalFocus: 'Geometria do Trapézio'
+    },
+    {
+      id: 'obmep-q20',
+      number: 20,
+      subject: 'Aritmética & Teoria dos Números',
+      generalDiscipline: 'Matemática Olímpica',
+      source: 'Questão autoral de treino para olimpíadas acadêmicas',
+      isOfficial: false,
+      difficulty: 'Difícil',
+      prompt: 'Quantos números inteiros de 1 a 100 NÃO são divisíveis nem por 2 e nem por 3?',
+      alternatives: [
+        { id: 'A', text: '31' },
+        { id: 'B', text: '33' },
+        { id: 'C', text: '35' },
+        { id: 'D', text: '37' },
+        { id: 'E', text: '40' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'Múltiplos de 2 até 100: 100 // 2 = 50. Múltiplos de 3 até 100: 100 // 3 = 33. Múltiplos de ambos (múltiplos de 6): 100 // 6 = 16. Pelo princípio da inclusão-exclusão: quantidade divisível por 2 ou 3 = 50 + 33 - 16 = 67. Portanto, a quantidade que NÃO é divisível por 2 nem por 3 é 100 - 67 = 33 números.',
+      teacherName: 'Profa. Ana Paula Miranda',
+      pedagogicalFocus: 'Princípio da Inclusão-Exclusão e Teoria dos Números'
+    }
+  ]
+};

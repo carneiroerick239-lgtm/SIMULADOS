@@ -1,0 +1,6 @@
+{
+  "name": "Quiz's - Plataforma de Estudos e Simulados Gratuitos",
+  "description": "Plataforma educacional brasileira 100% gratuita e sem login para simulados do ENEM, vestibulares, olimpíadas e concursos públicos com resolução comentada e cronômetro.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

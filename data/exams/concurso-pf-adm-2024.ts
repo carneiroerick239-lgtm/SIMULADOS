@@ -1,0 +1,442 @@
+import { Exam } from '@/types/quiz';
+
+export const concursoPfAdm2024: Exam = {
+  id: 'concurso-pf-adm-2024',
+  slug: 'concurso-agente-administrativo-pf',
+  title: 'Concurso Público - Agente Administrativo',
+  subtitle: 'Treinamento de Nível Médio e Superior • Carreiras Administrativas & Policiais',
+  category: 'concursos',
+  categoryLabel: 'Concursos Públicos',
+  year: 2024,
+  institution: 'Simulado Preparatório / Estilo Cebraspe & FGV',
+  difficulty: 'Média',
+  durationMinutes: 240,
+  questionsCount: 20,
+  disciplines: ['Língua Portuguesa', 'Direito Constitucional', 'Direito Administrativo', 'Raciocínio Lógico Matemático', 'Noções de Informática'],
+  description: 'Simulado completo com 20 questões autorais e auditadas de preparação para concursos das carreiras administrativas e policiais. Contempla gramática e interpretação, controle de constitucionalidade, atos administrativos, lógica proposicional e segurança da informação.',
+  isOfficial: false,
+  questions: [
+    {
+      id: 'concurso-adm-q01',
+      number: 1,
+      subject: 'Língua Portuguesa',
+      generalDiscipline: 'Língua Portuguesa',
+      source: 'Questão autoral de treino, inspirada nas habilidades e no estilo da banca Cebraspe',
+      isOfficial: false,
+      difficulty: 'Média',
+      contextQuote: '"A transparência na gestão pública não constitui mera concessão governamental, mas exigência inafastável do Estado Democrático de Direito, cuja finalidade primária é viabilizar o controle social dos atos administrativos."',
+      prompt: 'No período acima, o vocábulo "cuja" estabelece uma relação semântico-sintática de:',
+      alternatives: [
+        { id: 'A', text: 'Causa em relação ao termo antecedente "gestão pública".' },
+        { id: 'B', text: 'Posse entre "Estado Democrático de Direito" e o substantivo "finalidade".' },
+        { id: 'C', text: 'Concessão, podendo ser substituído sem alteração sintática por "onde a".' },
+        { id: 'D', text: 'Finalidade estrita entre a "concessão governamental" e os "atos administrativos".' },
+        { id: 'E', text: 'Tempo cronológico, funcionando como adjunto adverbial de anterioridade.' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'O pronome relativo "cujo(a)" introduz oração adjetiva e expressa valor de posse entre o termo antecedente ("Estado Democrático de Direito") e o termo consequente ("finalidade" -> a finalidade primária do Estado Democrático de Direito). Jamais admite artigo subsequente ("cuja a" é erro gramatical).',
+      teacherName: 'Prof. Fernando Pestana',
+      pedagogicalFocus: 'Pronomes Relativos e Sintaxe de Concordância'
+    },
+    {
+      id: 'concurso-adm-q02',
+      number: 2,
+      subject: 'Direito Constitucional',
+      generalDiscipline: 'Direito',
+      source: 'Questão autoral de treino, inspirada na jurisprudência do STF e CF/88',
+      isOfficial: false,
+      difficulty: 'Fácil',
+      prompt: 'De acordo com o artigo 5º da Constituição Federal de 1988, a casa é asilo inviolável do indivíduo, ninguém nela podendo penetrar sem consentimento do morador, salvo:',
+      alternatives: [
+        { id: 'A', text: 'Em caso de flagrante delito ou desastre, para prestar socorro, ou, durante o dia, por determinação judicial.' },
+        { id: 'B', text: 'A qualquer hora do dia ou da noite, mediante ordem escrita e fundamentada de delegado de polícia.' },
+        { id: 'C', text: 'Durante a noite, por mandado judicial ou fiscalização sanitária municipal sumária.' },
+        { id: 'D', text: 'Apenas em caso de estado de sítio decretado com autorização prévia da ONU.' },
+        { id: 'E', text: 'Sempre que houver fundada suspeita de contravenção penal de trânsito em via pública.' }
+      ],
+      correctAlternativeId: 'A',
+      explanation: 'Art. 5º, XI, CF/88: "a casa é asilo inviolável do indivíduo, ninguém nela podendo penetrar sem consentimento do morador, salvo em caso de flagrante delito ou desastre, ou para prestar socorro, ou, durante o dia, por determinação judicial." Atenção: determinação judicial somente durante o dia!',
+      teacherName: 'Profa. Nathalia Masson',
+      pedagogicalFocus: 'Direitos e Garantias Fundamentais (Art. 5º)'
+    },
+    {
+      id: 'concurso-adm-q03',
+      number: 3,
+      subject: 'Direito Administrativo',
+      generalDiscipline: 'Direito',
+      source: 'Questão autoral de treino, inspirada na Lei nº 8.112/1990 e no regime jurídico administrativo',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'São atributos ou características inerentes ao ato administrativo que o diferenciam dos atos jurídicos de direito privado:',
+      alternatives: [
+        { id: 'A', text: 'Bilateralidade, relatividade e prescritibilidade judicial facultativa.' },
+        { id: 'B', text: 'Presunção de legitimidade, imperatividade, autoexecutoriedade e tipicidade.' },
+        { id: 'C', text: 'Exclusividade contratual, onerosidade compulsória e revogabilidade nula.' },
+        { id: 'D', text: 'Impenhorabilidade, imunidade tributária e voluntariedade subjetiva irrestrita.' },
+        { id: 'E', text: 'Anterioridade orçamentária estrita e sigilo perpétuo dos fundamentos fáticos.' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'Os atributos clássicos dos atos administrativos (mnemônico P.A.T.I.): Presunção de legitimidade e veracidade; Autoexecutoriedade (execução direta pela Administração sem prévia autorização judicial nos casos em lei); Tipicidade (deve corresponder a figuras previamente definidas em lei); e Imperatividade (imposição a terceiros independentemente de sua concordância).',
+      teacherName: 'Prof. Matheus Carvalho',
+      pedagogicalFocus: 'Atributos dos Atos Administrativos'
+    },
+    {
+      id: 'concurso-adm-q04',
+      number: 4,
+      subject: 'Raciocínio Lógico Matemático',
+      generalDiscipline: 'Raciocínio Lógico',
+      source: 'Questão autoral de treino, inspirada no estilo Cebraspe de lógica proposicional',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'Considere a seguinte proposição condicional P: "Se o servidor atua com zelo, então o processo é concluído no prazo". A negação lógica dessa proposição P é expressa corretamente por:',
+      alternatives: [
+        { id: 'A', text: 'O servidor não atua com zelo ou o processo não é concluído no prazo.' },
+        { id: 'B', text: 'Se o servidor não atua com zelo, então o processo não é concluído no prazo.' },
+        { id: 'C', text: 'O servidor atua com zelo e o processo não é concluído no prazo.' },
+        { id: 'D', text: 'O servidor atua com zelo se e somente se o processo for concluído no prazo.' },
+        { id: 'E', text: 'O processo é concluído no prazo e o servidor não atua com zelo.' }
+      ],
+      correctAlternativeId: 'C',
+      explanation: 'Para negar uma proposição condicional do tipo "Se p, então q" (p → q), aplica-se a regra do "MANÉ": MANTÉM a primeira parte (p) E (∧) NEGA a segunda parte (~q). Logo: ~(p → q) ≡ p ∧ ~q ("O servidor atua com zelo E o processo não é concluído no prazo").',
+      teacherName: 'Prof. Renato Oliveira',
+      pedagogicalFocus: 'Lógica Proposicional e Negação da Condicional'
+    },
+    {
+      id: 'concurso-adm-q05',
+      number: 5,
+      subject: 'Noções de Informática',
+      generalDiscipline: 'Informática',
+      source: 'Questão autoral de treino para concursos públicos',
+      isOfficial: false,
+      difficulty: 'Fácil',
+      prompt: 'O tipo de código malicioso (malware) que bloqueia ou criptografa os arquivos e dados de um computador e exige da vítima o pagamento de um resgate (geralmente em criptomoedas) para fornecer a chave de descriptografia é denominado:',
+      alternatives: [
+        { id: 'A', text: 'Spyware.' },
+        { id: 'B', text: 'Ransomware.' },
+        { id: 'C', text: 'Rootkit.' },
+        { id: 'D', text: 'Worm.' },
+        { id: 'E', text: 'Adware.' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'Ransomware (do termo em inglês "ransom", resgate) é um software malicioso que restringe o acesso ao sistema ou sequestra os dados por criptografia, cobrando pagamento para o restabelecimento do acesso.',
+      teacherName: 'Prof. Victor Dalton',
+      pedagogicalFocus: 'Segurança da Informação e Ameaças Virtuais'
+    },
+    {
+      id: 'concurso-adm-q06',
+      number: 6,
+      subject: 'Língua Portuguesa',
+      generalDiscipline: 'Língua Portuguesa',
+      source: 'Questão autoral de treino para concursos públicos',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'Assinale a alternativa em que o uso do acento indicativo de crase está rigorosamente correto:',
+      alternatives: [
+        { id: 'A', text: 'O diretor encaminhou a portaria à todos os funcionários do departamento.' },
+        { id: 'B', text: 'As orientações foram transmitidas à uma autoridade estrangeira de passagem pela capital.' },
+        { id: 'C', text: 'A comissão técnica compareceu à reunião extraordinária convocada pelo tribunal.' },
+        { id: 'D', text: 'Eles preferiram andar à pé durante as inspeções no pátio de veículos.' },
+        { id: 'E', text: 'O relatório começou à ser redigido logo após a auditoria contábil.' }
+      ],
+      correctAlternativeId: 'C',
+      explanation: 'Em "compareceu à reunião extraordinária", o verbo comparecer rege preposição "a" (comparecer a algum lugar) e a palavra "reunião" é substantivo feminino determinado pelo artigo definido "a" (a + a = à). Nas demais opções: antes de palavra masculina ("todos", "pé"), antes de verbo ("ser") ou antes de artigo indefinido ("uma"), não há crase.',
+      teacherName: 'Prof. Fernando Pestana',
+      pedagogicalFocus: 'Regência Verbal e Emprego do Sinal da Crase'
+    },
+    {
+      id: 'concurso-adm-q07',
+      number: 7,
+      subject: 'Direito Constitucional',
+      generalDiscipline: 'Direito',
+      source: 'Questão autoral de treino, CF/88 Artigo 37',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'São princípios constitucionais expressos que regem a administração pública direta e indireta de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios (CF/88, caput do art. 37):',
+      alternatives: [
+        { id: 'A', text: 'Legalidade, impessoalidade, moralidade, publicidade e eficiência.' },
+        { id: 'B', text: 'Legalidade, supremacia do interesse privado, celeridade e publicidade.' },
+        { id: 'C', text: 'Impessoalidade, sigilo administrativo, proporcionalidade e lealdade partidária.' },
+        { id: 'D', text: 'Motivação, razoabilidade, culpabilidade presumida e economicidade privada.' },
+        { id: 'E', text: 'Eficácia mercadológica, livre iniciativa e desregulamentação monetária.' }
+      ],
+      correctAlternativeId: 'A',
+      explanation: 'O caput do artigo 37 da Constituição Federal consagra os cinco princípios constitucionais explícitos da Administração Pública pelo famoso mnemônico LIMPE: Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência (este último acrescentado pela EC 19/1998).',
+      teacherName: 'Profa. Nathalia Masson',
+      pedagogicalFocus: 'Princípios Expressos da Administração Pública'
+    },
+    {
+      id: 'concurso-adm-q08',
+      number: 8,
+      subject: 'Direito Administrativo',
+      generalDiscipline: 'Direito',
+      source: 'Questão autoral de treino sobre licitações e contratos (Lei 14.133/2021)',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'De acordo com a Nova Lei de Licitações e Contratos Administrativos (Lei nº 14.133/2021), a modalidade de licitação destinada à contratação de bens e serviços comuns, cujo critério de julgamento poderá ser o de menor preço ou o de maior desconto, é o:',
+      alternatives: [
+        { id: 'A', text: 'Concurso.' },
+        { id: 'B', text: 'Leilão.' },
+        { id: 'C', text: 'Pregão.' },
+        { id: 'D', text: 'Diálogo competitivo.' },
+        { id: 'E', text: 'Tomada de preços.' }
+      ],
+      correctAlternativeId: 'C',
+      explanation: 'O pregão é a modalidade de licitação obrigatória para a aquisição de bens e serviços comuns, cujos padrões de desempenho e qualidade possam ser objetivamente definidos pelo edital, por meio de especificações usuais de mercado. Na Lei 14.133/2021, o pregão adota critérios de menor preço ou maior desconto.',
+      teacherName: 'Prof. Matheus Carvalho',
+      pedagogicalFocus: 'Modalidades de Licitação (Lei 14.133/2021)'
+    },
+    {
+      id: 'concurso-adm-q09',
+      number: 9,
+      subject: 'Raciocínio Lógico Matemático',
+      generalDiscipline: 'Raciocínio Lógico',
+      source: 'Questão autoral de treino para concursos públicos',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'Uma equipe de 4 servidores analisa 60 processos em 5 dias de trabalho, mantendo sempre o mesmo ritmo de produtividade. Quantos dias serão necessários para que uma equipe de 6 servidores com a mesma capacidade operacional analise 180 processos?',
+      alternatives: [
+        { id: 'A', text: '8 dias.' },
+        { id: 'B', text: '10 dias.' },
+        { id: 'C', text: '12 dias.' },
+        { id: 'D', text: '15 dias.' },
+        { id: 'E', text: '18 dias.' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'Regra de três composta: Servidores (S), Dias (D), Processos (P). Relação: (S · D) / P = constante. No 1º caso: (4 · 5) / 60 = 20 / 60 = 1/3. No 2º caso: (6 · x) / 180 = 1/3 => 6x = 180 / 3 = 60 => x = 10 dias.',
+      teacherName: 'Prof. Renato Oliveira',
+      pedagogicalFocus: 'Regra de Três Composta'
+    },
+    {
+      id: 'concurso-adm-q10',
+      number: 10,
+      subject: 'Noções de Informática',
+      generalDiscipline: 'Informática',
+      source: 'Questão autoral de treino para concursos públicos',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'No Microsoft Excel ou Google Planilhas, caso o usuário queira somar os valores contidos no intervalo de células B2 até B20 somente quando o valor correspondente na coluna A (de A2 até A20) for igual a "Aprovado", a função correta a ser utilizada é:',
+      alternatives: [
+        { id: 'A', text: '=CONT.SE(A2:A20; "Aprovado"; B2:B20)' },
+        { id: 'B', text: '=SOMASE(A2:A20; "Aprovado"; B2:B20)' },
+        { id: 'C', text: '=SE.SOMA(B2:B20; "Aprovado")' },
+        { id: 'D', text: '=PROCV("Aprovado"; A2:B20; 2; VERDADEIRO)' },
+        { id: 'E', text: '=MEDIASE(B2:B20; "Aprovado")' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'A função SOMASE possui a sintaxe =SOMASE(intervalo_criterio; criterio; [intervalo_soma]). Portanto, =SOMASE(A2:A20; "Aprovado"; B2:B20) verifica quais células do intervalo A2:A20 contêm "Aprovado" e soma os valores correspondentes em B2:B20.',
+      teacherName: 'Prof. Victor Dalton',
+      pedagogicalFocus: 'Planilhas Eletrônicas e Funções Condicionais'
+    },
+    {
+      id: 'concurso-adm-q11',
+      number: 11,
+      subject: 'Direito Constitucional',
+      generalDiscipline: 'Direito',
+      source: 'Questão autoral de treino, CF/88 Artigo 5º',
+      isOfficial: false,
+      difficulty: 'Fácil',
+      prompt: 'O remédio constitucional cabível para proteger direito líquido e certo, não amparado por habeas corpus ou habeas data, quando o responsável pela ilegalidade ou abuso de poder for autoridade pública ou agente de pessoa jurídica no exercício de atribuições do Poder Público, é o:',
+      alternatives: [
+        { id: 'A', text: 'Mandado de Segurança.' },
+        { id: 'B', text: 'Mandado de Injunção.' },
+        { id: 'C', text: 'Ação Popular.' },
+        { id: 'D', text: 'Habeas Corpus coletivo.' },
+        { id: 'E', text: 'Recurso Extraordinário com repercussão geral.' }
+      ],
+      correctAlternativeId: 'A',
+      explanation: 'Art. 5º, LXIX, CF/88: "conceder-se-á mandado de segurança para proteger direito líquido e certo, não amparado por habeas corpus ou habeas data, quando o responsável pela ilegalidade ou abuso de poder for autoridade pública ou agente de pessoa jurídica no exercício de atribuições do Poder Público."',
+      teacherName: 'Profa. Nathalia Masson',
+      pedagogicalFocus: 'Remédios Constitucionais'
+    },
+    {
+      id: 'concurso-adm-q12',
+      number: 12,
+      subject: 'Direito Administrativo',
+      generalDiscipline: 'Direito',
+      source: 'Questão autoral de treino sobre Regime Disciplinar da Lei 8.112/1990',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'Nos termos da Lei nº 8.112/1990, a demissão de servidor público federal estável é penalidade disciplinar expressamente prevista para a seguinte infração:',
+      alternatives: [
+        { id: 'A', text: 'Ausentar-se do serviço durante o expediente sem prévia autorização da chefia imediata.' },
+        { id: 'B', text: 'Prática de improbidade administrativa, corrupção e abandono de cargo.' },
+        { id: 'C', text: 'Recusar fé a documentos públicos sem reincidência formal prévia.' },
+        { id: 'D', text: 'Chegar com atraso de dez minutos em reunião interna de alinhamento setorial.' },
+        { id: 'E', text: 'Não comparecer a curso voluntário de capacitação funcional oferecido pela Escola de Governo.' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'O art. 132 da Lei 8.112/1990 elenca as condutas puníveis com demissão, incluindo: improbidade administrativa, aplicação irregular de dinheiros públicos, revelação de segredo conhecido em razão do cargo, corrupção, lesão aos cofres públicos e abandono de cargo (ausência injustificada por mais de 30 dias consecutivos).',
+      teacherName: 'Prof. Matheus Carvalho',
+      pedagogicalFocus: 'Regime Disciplinar dos Servidores Federais'
+    },
+    {
+      id: 'concurso-adm-q13',
+      number: 13,
+      subject: 'Língua Portuguesa',
+      generalDiscipline: 'Língua Portuguesa',
+      source: 'Questão autoral de treino para concursos públicos',
+      isOfficial: false,
+      difficulty: 'Média',
+      contextQuote: '"Não obstante as advertências emitidas pelo órgão fiscalizador, a empresa manteve as operações irregulares no terminal portuário."',
+      prompt: 'A locução conjuntiva "Não obstante" confere à oração um valor semântico de:',
+      alternatives: [
+        { id: 'A', text: 'Concessão, podendo ser substituída sem alteração de sentido por "Apesar de".' },
+        { id: 'B', text: 'Causa, equivalente a "Visto que".' },
+        { id: 'C', text: 'Condição hipotética, equivalente a "Caso".' },
+        { id: 'D', text: 'Consequência temporal, equivalente a "Porquanto".' },
+        { id: 'E', text: 'Proporcionalidade contínua, equivalente a "À medida que".' }
+      ],
+      correctAlternativeId: 'A',
+      explanation: '"Não obstante" introduz uma oração concessiva, que expressa uma ressalva ou oposição que não anula o fato da oração principal. É sinônima de "apesar de", "embora", "conquanto", "malgrado".',
+      teacherName: 'Prof. Fernando Pestana',
+      pedagogicalFocus: 'Conjunções Subordinativas e Sentido Textual'
+    },
+    {
+      id: 'concurso-adm-q14',
+      number: 14,
+      subject: 'Raciocínio Lógico Matemático',
+      generalDiscipline: 'Raciocínio Lógico',
+      source: 'Questão autoral de treino para concursos públicos',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'Em um grupo de 80 candidatos aprovados para a fase de heteroidentificação de um concurso, sabe-se que 45 possuem fluência em Língua Inglesa, 35 possuem fluência em Língua Espanhola e 15 possuem fluência em ambos os idiomas. Quantos candidatos desse grupo NÃO possuem fluência em nenhum desses dois idiomas?',
+      alternatives: [
+        { id: 'A', text: '10' },
+        { id: 'B', text: '15' },
+        { id: 'C', text: '20' },
+        { id: 'D', text: '25' },
+        { id: 'E', text: '30' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'Pelo princípio da inclusão-exclusão para dois conjuntos: n(I ∪ E) = n(I) + n(E) - n(I ∩ E) = 45 + 35 - 15 = 65 candidatos dominam pelo menos um idioma. Como o total de candidatos é 80: Nenhum = 80 - 65 = 15 candidatos.',
+      teacherName: 'Prof. Renato Oliveira',
+      pedagogicalFocus: 'Teoria dos Conjuntos e Diagramas de Venn'
+    },
+    {
+      id: 'concurso-adm-q15',
+      number: 15,
+      subject: 'Direito Constitucional',
+      generalDiscipline: 'Direito',
+      source: 'Questão autoral de treino, CF/88 Artigo 14',
+      isOfficial: false,
+      difficulty: 'Fácil',
+      prompt: 'De acordo com a Constituição Federal de 1988, o alistamento eleitoral e o voto são facultativos para:',
+      alternatives: [
+        { id: 'A', text: 'Os analfabetos, os maiores de 70 anos e os maiores de 16 e menores de 18 anos.' },
+        { id: 'B', text: 'Os estrangeiros residentes no país e os conscritos durante o serviço militar obrigatório.' },
+        { id: 'C', text: 'Todos os servidores públicos civis que tenham mais de vinte anos de efetivo exercício.' },
+        { id: 'D', text: 'Apenas os cidadãos que residam fora do território nacional há mais de cinco anos.' },
+        { id: 'E', text: 'Os indivíduos com idade entre 18 e 65 anos que comprovem baixa renda familiar.' }
+      ],
+      correctAlternativeId: 'A',
+      explanation: 'Art. 14, § 1º, II, CF/88: O alistamento eleitoral e o voto são facultativos para: a) os analfabetos; b) os maiores de setenta anos; c) os maiores de dezesseis e menores de dezoito anos. Para os brasileiros natos ou naturalizados alfabetizados entre 18 e 70 anos, é obrigatório.',
+      teacherName: 'Profa. Nathalia Masson',
+      pedagogicalFocus: 'Direitos Políticos e Elegibilidade'
+    },
+    {
+      id: 'concurso-adm-q16',
+      number: 16,
+      subject: 'Direito Administrativo',
+      generalDiscipline: 'Direito',
+      source: 'Questão autoral de treino sobre Poderes Administrativos',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'A atividade da administração pública que, limitando ou disciplinando direito, interesse ou liberdade individual, regula a prática de ato ou abstenção de fato em razão de interesse público concernente à segurança, à higiene, à ordem e aos costumes, denomina-se:',
+      alternatives: [
+        { id: 'A', text: 'Poder regulamentar estrito.' },
+        { id: 'B', text: 'Poder de polícia.' },
+        { id: 'C', text: 'Poder hierárquico derivado.' },
+        { id: 'D', text: 'Poder disciplinar interno.' },
+        { id: 'E', text: 'Poder constituinte difuso.' }
+      ],
+      correctAlternativeId: 'B',
+      explanation: 'Essa é a definição clássica de poder de polícia dada pelo art. 78 do Código Tributário Nacional (CTN) e reproduzida pela doutrina do Direito Administrativo: a prerrogativa estatal de condicionar e restringir o uso de bens, direitos e liberdades individuais em prol da coletividade.',
+      teacherName: 'Prof. Matheus Carvalho',
+      pedagogicalFocus: 'Poder de Polícia Administrativo'
+    },
+    {
+      id: 'concurso-adm-q17',
+      number: 17,
+      subject: 'Noções de Informática',
+      generalDiscipline: 'Informática',
+      source: 'Questão autoral de treino para concursos públicos',
+      isOfficial: false,
+      difficulty: 'Fácil',
+      prompt: 'Qual protocolo da camada de aplicação do modelo TCP/IP é responsável por transferir hipertextos e documentos web de forma segura por meio de criptografia TLS/SSL, operando por padrão na porta lógica 443?',
+      alternatives: [
+        { id: 'A', text: 'HTTP (porta 80)' },
+        { id: 'B', text: 'FTP (porta 21)' },
+        { id: 'C', text: 'HTTPS (porta 443)' },
+        { id: 'D', text: 'SMTP (porta 25 ou 587)' },
+        { id: 'E', text: 'SNMP (porta 161)' }
+      ],
+      correctAlternativeId: 'C',
+      explanation: 'O HTTPS (Hypertext Transfer Protocol Secure) adiciona uma camada de segurança (criptografia TLS/SSL) à transmissão de páginas web entre o cliente e o servidor, garantindo autenticidade, confidencialidade e integridade na porta padrão 443.',
+      teacherName: 'Prof. Victor Dalton',
+      pedagogicalFocus: 'Redes de Computadores e Protocolos de Internet'
+    },
+    {
+      id: 'concurso-adm-q18',
+      number: 18,
+      subject: 'Língua Portuguesa',
+      generalDiscipline: 'Língua Portuguesa',
+      source: 'Questão autoral de treino para concursos públicos',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'Assinale a opção em que a concordância verbal está em estrita conformidade com a norma-padrão da língua portuguesa:',
+      alternatives: [
+        { id: 'A', text: 'Fazem dez anos que o estatuto dos servidores públicos entrou em vigor no município.' },
+        { id: 'B', text: 'Haviam muitos candidatos aguardando o início da aplicação das provas discursivas.' },
+        { id: 'C', text: 'Mais de 70% dos inscritos compareceram ao local de prova no horário previsto.' },
+        { id: 'D', text: 'Tratam-se de processos administrativos de extrema complexidade orçamentária.' },
+        { id: 'E', text: 'Deve haverem outras testemunhas que possam prestar esclarecimentos à comissão sindicante.' }
+      ],
+      correctAlternativeId: 'C',
+      explanation: 'Na alternativa C, com porcentagem seguida de especificador ("70% dos inscritos"), o verbo concorda com o numeral ou com o substantivo no plural: "compareceram". Nas demais: "Fazem dez anos" é incorreto (verbo fazer indicando tempo é impessoal: "Faz dez anos"); "Haviam muitos candidatos" é incorreto ("Havia muitos candidatos"); "Tratam-se de" é incorreto ("Trata-se de", índice de indeterminação do sujeito); "Deve haverem" é incorreto ("Deve haver").',
+      teacherName: 'Prof. Fernando Pestana',
+      pedagogicalFocus: 'Concordância Verbal e Verbos Impessoais'
+    },
+    {
+      id: 'concurso-adm-q19',
+      number: 19,
+      subject: 'Direito Administrativo',
+      generalDiscipline: 'Direito',
+      source: 'Questão autoral de treino, Lei 9.784/1999 (Processo Administrativo Federal)',
+      isOfficial: false,
+      difficulty: 'Média',
+      prompt: 'A respeito da anulação e da revogação dos atos administrativos consoante a Súmula 473 do Supremo Tribunal Federal (STF), assinale a afirmativa correta:',
+      alternatives: [
+        { id: 'A', text: 'A Administração pode anular seus próprios atos, quando eivados de vícios que os tornam ilegais, ou revogá-los, por motivo de conveniência ou oportunidade.' },
+        { id: 'B', text: 'Apenas o Poder Judiciário tem competência para revogar atos administrativos municipais discricionários.' },
+        { id: 'C', text: 'A anulação opera efeitos ex nunc (prospectivos), enquanto a revogação opera efeitos retroativos ex tunc.' },
+        { id: 'D', text: 'Atos vinculados ilegais podem ser revogados pelo superior hierárquico por critério de oportunidade.' },
+        { id: 'E', text: 'A revogação atinge atos já consumados com direito adquirido sem necessidade de contraditório.' }
+      ],
+      correctAlternativeId: 'A',
+      explanation: 'Súmula 473 do STF: "A administração pode anular seus próprios atos, quando eivados de vícios que os tornam ilegais, porque deles não se originam direitos; ou revogá-los, por motivo de conveniência ou oportunidade, respeitados os direitos adquiridos, e ressalvada, em todos os casos, a apreciação judicial."',
+      teacherName: 'Prof. Matheus Carvalho',
+      pedagogicalFocus: 'Anulação e Revogação de Atos Administrativos'
+    },
+    {
+      id: 'concurso-adm-q20',
+      number: 20,
+      subject: 'Raciocínio Lógico Matemático',
+      generalDiscipline: 'Raciocínio Lógico',
+      source: 'Questão autoral de treino para concursos públicos',
+      isOfficial: false,
+      difficulty: 'Difícil',
+      prompt: 'Três analistas periciais — Carlos, Daniel e Eduardo — trabalham em setores diferentes: Balística, Documentoscopia e Informática Forense, não necessariamente nessa ordem. Sabe-se que: (1) Ou Carlos está na Balística, ou Eduardo está na Balística; (2) Se Daniel não está na Documentoscopia, então Carlos está na Informática Forense; (3) Eduardo não está na Balística. Com base nessas premissas, é correto concluir que:',
+      alternatives: [
+        { id: 'A', text: 'Carlos trabalha na Balística, Daniel na Documentoscopia e Eduardo na Informática Forense.' },
+        { id: 'B', text: 'Eduardo trabalha na Documentoscopia e Carlos na Informática Forense.' },
+        { id: 'C', text: 'Carlos trabalha na Informática Forense e Daniel na Balística.' },
+        { id: 'D', text: 'Daniel trabalha na Balística e Eduardo na Informática Forense.' },
+        { id: 'E', text: 'Carlos trabalha na Documentoscopia e Daniel na Informática Forense.' }
+      ],
+      correctAlternativeId: 'A',
+      explanation: 'Análise lógica das premissas: (3) "Eduardo não está na Balística" é VERDADEIRO. Pela premissa (1) disjunção exclusiva ("Ou Carlos na Balística ou Eduardo na Balística"): como Eduardo não está, obrigatoriamente Carlos ESTÁ na Balística. Como Carlos está na Balística, Carlos NÃO está na Informática Forense. Pela premissa (2): "Se Daniel não na Doc, então Carlos na Info". A conclusão "Carlos na Info" é falsa, logo pela contrapositiva o antecedente "Daniel não na Doc" tem que ser falso, ou seja, Daniel ESTÁ na Documentoscopia. Sobra para Eduardo a Informática Forense. Conclusão: Carlos = Balística, Daniel = Documentoscopia, Eduardo = Informática Forense.',
+      teacherName: 'Prof. Renato Oliveira',
+      pedagogicalFocus: 'Raciocínio Lógico Dedutivo e Correlação de Elementos'
+    }
+  ]
+};
